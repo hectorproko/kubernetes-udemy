@@ -6,7 +6,7 @@ metadata:
     name: voting-service
     app: demo-voting-app
 spec:
-  type: NodePort #default is ClusterIP
+  type: LoadBalancer #Changed from NodePort for user in the cloud
   ports:
     - port: 80
       targetPort: 80
